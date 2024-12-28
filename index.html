@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi Tiendita Online</title>
+</head>
+<body>
+    <div class="container">
+        <div class="productos">
+            <!-- Los productos se cargarán dinámicamente -->
+        </div>
+
+        <div class="carrito">
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-items">
+                <!-- Los items del carrito se cargarán dinámicamente -->
+            </div>
+            <div class="carrito-total">
+                Total: $<span id="total">0</span>
+            </div>
+            <button class="btn-comprar" onclick="realizarCompra()">Realizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Mensaje de confirmación -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mensaje-confirmacion" id="mensajeConfirmacion">
+        <h3>¡Felicidades por tu compra!</h3>
+        <p>Tu pedido ha sido procesado exitosamente.</p>
+        <button onclick="cerrarMensaje()">Aceptar</button>
+    </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
